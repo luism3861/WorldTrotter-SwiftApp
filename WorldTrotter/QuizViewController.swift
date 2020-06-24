@@ -20,8 +20,8 @@ class QuizViewController:UIViewController{
     
     let answers:[String] = [
         "14",
-        "no mames no se we",
-        "apoco si we"
+        "Montpelier",
+        "Grapes"
     ]
     
     var currentQuestionIndex = 0
