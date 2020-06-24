@@ -12,7 +12,7 @@ class MapViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Second ViewController")
+        print("Second View")
     }
 
 }
