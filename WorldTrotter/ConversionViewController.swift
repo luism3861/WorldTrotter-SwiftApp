@@ -12,7 +12,6 @@ class ConversionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("First View Controller")
     }
     
     func getRandomColor() -> UIColor {

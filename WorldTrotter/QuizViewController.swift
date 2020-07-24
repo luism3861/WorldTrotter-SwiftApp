@@ -40,7 +40,6 @@ class QuizViewController:UIViewController{
             let question:String = questions[currentQuestionIndex]
             questionLabel.text = String(question)
             answerLabel.text = "???"
-        print(question)
     }
     
     @IBAction func showAnswer(_ sender: UIButton) {
