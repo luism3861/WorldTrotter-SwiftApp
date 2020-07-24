@@ -1,2 +1,2 @@
 # WorldTrotter-SwiftApp
-weathe swift app!
+weather swift app!
