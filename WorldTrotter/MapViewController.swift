@@ -54,6 +54,8 @@ class MapViewController: UIViewController{
         labelSwitch = UILabel()
         labelSwitch.text = "Points of Interest"
         labelSwitch.font = labelSwitch.font.withSize(20)
+        labelSwitch.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+
 
         labelSwitch.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(labelSwitch)
@@ -78,14 +80,17 @@ class MapViewController: UIViewController{
     }
     
     
-    @objc func mapTypeChanged(_ segControl: UISegmentedControl) {
+   @objc  func mapTypeChanged(_ segControl: UISegmentedControl) {
         switch segControl.selectedSegmentIndex {
         case 0:
             mapView.mapType = .standard
+            labelSwitch.textColor = UIColor.black
         case 1:
             mapView.mapType = .hybrid
+         labelSwitch.textColor = UIColor.white
         case 2:
             mapView.mapType = .satellite
+            labelSwitch.textColor = UIColor.white
         default:
             break
         }
@@ -107,7 +112,6 @@ class MapViewController: UIViewController{
             } else {
                 // Fallback on earlier versions
             }
-                labelSwitch.font  = UIFont.systemFont(ofSize: UIFont.systemFontSize)
         }
       updateVerticalPoiConstraint()
     }
